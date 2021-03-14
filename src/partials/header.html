@@ -1,0 +1,67 @@
+<div class="bg-gray-800 h-16 fixed z-10 w-screen">
+  <div
+    class="container mx-auto flex justify-between items-center px-8 text-white"
+  >
+    <div class="text-base uppercase tracking-widest">SSIAP Évènementiel</div>
+    <div class="hidden lg:flex text-sm uppercase">
+      <a href="#section-who" class="header-link">Qui suis-je ?</a>
+      <a href="#section-services" class="header-link">Prestations</a>
+      <a href="#section-events" class="header-link">Évènements</a>
+      <a href="#section-contact" class="header-link">Contact</a>
+    </div>
+    <div id="openNav" class="lg:hidden cursor-pointer header-link">
+      <div class="h-6 w-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  id="backdrop"
+  class="transition-opacity duration-500 z-20 bg-gray-900 h-screen w-screen fixed opacity-0 hidden"
+></div>
+<aside
+  id="sidenav"
+  class="h-screen w-52 fixed z-30 top-0 right-0 bg-white overflow-x-hidden transition transform duration-300 ease-out translate-x-full"
+>
+  <div class="flex flex-col uppercase">
+    <a
+      id="closeNav"
+      class="text-4xl hover:text-primabg-primary pl-5 pt-2 pb-5 cursor-pointer"
+      >&times;</a
+    >
+    <a
+      href="#section-who"
+      class="aside-link hover:bg-gray-900 active:bg-primary hover:text-white p-5"
+      >Qui suis-je ?</a
+    >
+    <a
+      href="#section-services"
+      class="aside-link hover:bg-gray-900 active:bg-primary hover:text-white p-5"
+      >Prestations</a
+    >
+    <a
+      href="#section-events"
+      class="aside-link hover:bg-gray-900 active:bg-primary hover:text-white p-5"
+      >Évènements</a
+    >
+    <a
+      href="#section-contact"
+      class="aside-link hover:bg-gray-900 active:bg-primary hover:text-white p-5"
+      >Contact</a
+    >
+  </div>
+</aside>

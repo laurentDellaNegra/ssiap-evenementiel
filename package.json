@@ -1,0 +1,37 @@
+{
+  "name": "ssia-evenementiel",
+  "version": "1.0.0",
+  "description": "Site web professionnel SSIA evenementiel",
+  "private": true,
+  "homepage": "/ssia-evenementiel",
+  "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack serve --mode development",
+    "build": "NODE_ENV=production webpack --mode production"
+  },
+  "author": "laurent.dellanegra@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "kwesforms": "^2.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.4",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "gh-pages": "^3.1.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^5.0.0-alpha.15",
+    "mini-css-extract-plugin": "^1.3.2",
+    "postcss": "^8.1.14",
+    "postcss-cli": "^8.3.0",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.1",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

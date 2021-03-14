@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stéphane | Agent SSIAP</title>
+    <meta
+      name="description"
+      content="Site professionnel de Stéphane, agent SSIAP indépendant en évènementiel"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="SSIAP Événementiel" />
+    <meta
+      property="og:description"
+      content="Site professionnel de Stéphane, agent SSIAP indépendant en évènementiel"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ssiap-evenementiel.com" />
+    <meta property="og:image" content="./images/profile.jpeg" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body
+    class="hide antialiased transition-opacity duration-500 opacity-0 relative"
+  >
+    <!-- Header -->
+    <%= require('html-loader!./partials/header.html') %>
+
+    <!-- Qui suis-je ? -->
+    <%= require('html-loader!./partials/who.html') %>
+
+    <!-- Prestations -->
+    <%= require('html-loader!./partials/services.html') %>
+
+    <!-- Evenements -->
+    <%= require('html-loader!./partials/events.html') %>
+
+    <!-- Contact -->
+    <%= require('html-loader!./partials/contact.html') %>
+
+    <!-- Footer -->
+    <%= require('html-loader!./partials/footer.html') %>
+
+    <!-- Floating buttons -->
+    <%= require('html-loader!./partials/floating-buttons.html') %>
+  </body>
+</html>

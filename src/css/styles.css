@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-title {
+    @apply font-display text-5xl mb-8 sm:mb-16 text-gray-800;
+  }
+
+  .section-content {
+    @apply text-gray-500;
+  }
+
+  .header-link {
+    @apply p-5 hover:bg-gray-900 hover:text-white active:bg-primary;
+  }
+
+  .disabled {
+    @apply bg-gray-300 text-gray-400 cursor-not-allowed;
+  }
+
+  .enable {
+    @apply bg-primary text-white;
+  }
+}
