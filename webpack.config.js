@@ -35,7 +35,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "CNAME" },
+        { from: ".CNAME" },
         { from: "src/favicon", to: "favicon" },
         { from: "src/mentions-legales.html" },
       ],
