@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Site web professionnel SSIA evenementiel",
   "private": true,
-  "homepage": "/ssia-evenementiel",
+  "homepage": "/ssiap-evenementiel",
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist",
