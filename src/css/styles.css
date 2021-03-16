@@ -4,7 +4,7 @@
 
 @layer components {
   .section-title {
-    @apply font-display text-5xl mb-8 sm:mb-16 text-gray-800;
+    @apply font-display text-5xl mb-8 sm:mb-16 text-gray-800 tracking-wide;
   }
 
   .section-content {
