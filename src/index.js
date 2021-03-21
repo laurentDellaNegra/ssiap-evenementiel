@@ -92,6 +92,13 @@ $("#form-button").on("click", function () {
     closeForm();
   }
 });
+$("#contact-me-button").on("click", function () {
+  if (!isFormOpen) {
+    openForm();
+  } else {
+    closeForm();
+  }
+});
 let emailValid = false;
 let messageValid = false;
 $("#input-email").on("input", (e) => {
@@ -145,6 +152,23 @@ $("#backdrop").on("click", function () {
 });
 $("#close").on("click", function () {
   closeForm();
+});
+
+$(window).on("scroll", function () {
+  var top_of_element = $("#contact-me-button").offset().top;
+  var bottom_of_element =
+    $("#contact-me-button").offset().top +
+    $("#contact-me-button").outerHeight();
+  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+  var top_of_screen = $(window).scrollTop();
+
+  if (bottom_of_screen > top_of_element && top_of_screen < bottom_of_element) {
+    // the element is visible, do something
+    $("#form-button-container").addClass("translate-y-80");
+  } else {
+    // the element is not visible, do something else
+    $("#form-button-container").removeClass("translate-y-80");
+  }
 });
 
 /**
